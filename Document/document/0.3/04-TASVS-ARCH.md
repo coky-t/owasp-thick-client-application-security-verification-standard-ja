@@ -56,7 +56,7 @@
 
 ### TASVS-ARCH-1.6
 
-The threat model should be updated regularly as part of a documented process within the development team's SSDLC. This ensures that the threat model remains current and relevant as the thick client evolves and new threats emerge. Regular updates to the threat model help to ensure that the thick client remains secure and resilient to potential threats.
+脅威モデルは開発チームの SSDLC 内の文書化されたプロセスの一環として定期的に更新すべきです。これにより、シッククライアントが進化し、新しい脅威が出現しても、脅威モデルが最新かつ適切な状態を維持できます。脅威モデルを定期的に更新することで、シッククライアントが安全で、潜在的な脅威に耐性があることを確保します。
 
 
 \newpage{}
