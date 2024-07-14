@@ -35,11 +35,11 @@
 
 ### TASVS-ARCH-1.2
 
-"high fidelity" threat modeling is a more detailed and comprehensive approach to threat modeling. It includes all the elements of a low-fidelity model but adds more detail and context to the model. This includes:
+「忠実度の高い」脅威モデリングは脅威モデリングのより詳細で包括的なアプローチです。これは忠実度の低いモデルのすべての要素を含みますが、モデルにさらに詳細とコンテキストを追加します。これには以下があります。
 
-- Detailed data flow diagrams
-- Detailed trust boundaries
-- Detailed threat identification
+- 詳細なデータフロー図
+- 詳細な信頼境界
+- 詳細な脅威特定
 
 ### TASVS-ARCH-1.3
 
