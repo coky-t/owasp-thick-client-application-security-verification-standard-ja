@@ -43,7 +43,7 @@
 
 ### TASVS-ARCH-1.3
 
-Server-side components and dependencies should be included in the threat modeling process to ensure that all potential threats are identified and addressed. This includes cloud APIs, OIDC providers, file storage, and any other external services that the thick client interacts with. By including these components in the threat model, you can identify potential vulnerabilities and design security controls to mitigate them.
+サーバーサイドコンポーネントと依存関係を脅威モデリングプロセスに含めて、すべての潜在的な脅威を特定して対処するようにします。これはクラウド API、OIDC プロバイダ、ファイルストレージ、その他のシッククライアントがやり取りする外部サービスを含みます。これらのコンポーネントを脅威モデルに含めることで、潜在的な脆弱性を特定し、セキュリティコントロールを設計して、それを緩和できます。
 
 ### TASVS-ARCH-1.4
 
