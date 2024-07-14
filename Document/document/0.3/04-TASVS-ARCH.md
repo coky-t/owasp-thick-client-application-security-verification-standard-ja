@@ -51,7 +51,7 @@
 
 ### TASVS-ARCH-1.5
 
-The threat model should be checked into the source code repository to ensure that it is accessible to all members of the development team. This allows team members to review the threat model and provide feedback, as well as track changes to the model over time.
+脅威モデルはソースコードリポジトリにチェックインし、開発チームのすべてのメンバーがアクセスできるようにします。これにより、チームメンバーは脅威モデルをレビューしてフィードバックを提供し、時間の経過に伴うモデルの変化を追跡できます。
 
 
 ### TASVS-ARCH-1.6
