@@ -19,19 +19,19 @@
 
 ## コントロールグループ定義
 
-### TASVS-ARCH-1.1 
+### TASVS-ARCH-1.1
 
-#### What defines "Low Fidelity" Modeling?
+#### 「忠実度の低い」モデリングの定義とは？
 
-"Low Fidelity" modeling greatly reduces the effort to create an initial threat model. A "Low Fidelity" system model still includes assets, links, and trust boundaries, but with limited attributes.
- 
-Recommended "Low Fidelity" baseline:
-- Define data assets with CIA (confidentiality/integrity/availability)
-- Define technical assets with technology.
-- Define communication links with protocol.
-- Place technical assets inside trust boundaries.
+「忠実度の低い」モデリングにより、初期の脅威モデルを作成する労力を大幅に削減します。「忠実度の低い」システムモデルは資産、リンク、信頼境界を含みますが、属性が制限されます。
 
-That's it! Later, continue to elaborate the model and raise fidelity score. Remember the system model is a means to an end - identifying threats.
+推奨される「忠実度の低い」ベースライン:
+- データ資産を CIA (機密性/完全性/可用性) で定義します。
+- 技術資産をテクノロジで定義します。
+- 通信リンクをプロトコルで定義します。
+- 技術資産を信頼境界内に配置します。
+
+これで終わりです。その後、モデルをさらに精緻化し、忠実度スコアを上げていきます。システムモデルは、脅威を特定するという目的を達成するための手段であることを忘れないでください。
 
 ### TASVS-ARCH-1.2
 
