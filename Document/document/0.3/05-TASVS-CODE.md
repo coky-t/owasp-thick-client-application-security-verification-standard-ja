@@ -55,7 +55,7 @@
 
 ### TASVS-CODE-1.1
 
-In an effort to avoid unnecesary cross over between the TASVS and the ASVS, this control is merely a reminder to test the server side components of the thick client using the ASVS.
+TASVS と ASVS 間の不要なクロスオーバーを避けるために、このコントロールは、ASVS を使用してシッククライアントのサーバーサイドコンポーネントをテストするための単なる注意喚起です。
 
 ### TASVS-CODE-2.1
 
