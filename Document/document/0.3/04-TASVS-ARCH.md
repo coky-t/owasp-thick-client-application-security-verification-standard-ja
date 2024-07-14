@@ -47,7 +47,7 @@
 
 ### TASVS-ARCH-1.4
 
-Phases of threat modeling include system modeling, auto-threat identification, manual threat identification, and threat mitigation. Each phase is essential to the overall threat modeling process and should be completed thoroughly to ensure that all potential threats are identified and addressed.
+脅威モデリングのフェーズは、システムモデリング、自動脅威識別、手動脅威識別、脅威緩和を含みます。それぞれのフェーズが脅威モデリングプロセス全体に不可欠であり、潜在的な脅威をすべて特定して対処するように、徹底的に完了する必要があります。
 
 ### TASVS-ARCH-1.5
 
