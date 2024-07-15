@@ -67,7 +67,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-2.3
 
-Runtime integrity checks are used to verify that the thick client has not been tampered with while it is *running*. This can help to detect attacks that attempt to modify the software's behavior while it is in use.
+ランタイム完全性チェックを使用して、シッククライアントが *実行* 時に改竄されていないことを検証します。これは、使用中のソフトウェアの動作を変更しようとする攻撃を検出するのに役立ちます。
 
 ### TASVS-CODE-2.4
 
