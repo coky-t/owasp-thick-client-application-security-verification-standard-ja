@@ -129,9 +129,9 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-4.5
 
-The thick client should use memory-safe string, safer memory copy, and pointer arithmetic to detect or prevent stack, buffer, or heap overflows. This can help to prevent attackers from exploiting memory vulnerabilities to execute arbitrary code on the thick client.
+シッククライアントはメモリセーフな文字列、より安全なメモリコピーおよびポインタ演算子を使用して、スタック、バッファ、ヒープのオーバーフローを検出または防止する必要があります。これにより、攻撃者がメモリの脆弱性を悪用して、シッククライアントで任意のコードを実行することを防ぐのに役立ちます。
 
-Safe alternatives to common string functions like `strcpy` and `strcat` should be used to prevent buffer overflows. Memory-safe string functions like `strlcpy` and `strlcat` are available in many programming languages and can help to prevent buffer overflows.
+`strcpy` や `strcat` などの一般的な文字列関数の安全な代替手段を使用して、バッファオーバーフローを防ぐ必要があります。`strlcpy` や `strlcat` などのメモリセーフな文字列関数は多くのプログラミング言語で利用可能であり、バッファオーバーフローを防ぐのに役立ちます。
 
 ### TASVS-CODE-4.6
 
