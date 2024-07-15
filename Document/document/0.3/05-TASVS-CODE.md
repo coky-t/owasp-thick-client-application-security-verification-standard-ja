@@ -63,7 +63,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-2.2
 
-File integrity checks are used to verify that the files used by the thick client have not been tampered with. This can help to detect unauthorized changes to the software, such as the introduction of malware or other malicious code.
+ファイル完全性チェックを使用して、シッククライアントで使用するファイルが改竄されていないことを検証します。これは、マルウェアやその他の悪意のあるコードの導入など、ソフトウェアへの認可されていない変更を検出するのに役立ちます。
 
 ### TASVS-CODE-2.3
 
