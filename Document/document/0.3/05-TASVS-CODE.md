@@ -59,7 +59,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-2.1
 
-The thick client binary should be signed to ensure that it has not been tampered with. This is especially important for thick clients that are distributed to end users, as it provides a way to verify the authenticity of the software.
+シッククライアントバイナリは改竄されていないことを確認するために署名する必要があります。これは、ソフトウェアの信頼性を検証する方法を提供するため、エンドユーザーに配布するシッククライアントにとって特に重要です。
 
 ### TASVS-CODE-2.2
 
