@@ -83,7 +83,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-3.2
 
-Exceptions that are thrown and not properly handled can lead to security vulnerabilities in the thick client. It is important to search the source code for cases where exceptions are thrown and not properly handled, as these can allow malicious actions to be performed.
+例外がスローされて適切に処理されないと、シッククライアントのセキュリティ脆弱性につながる可能性があります。悪意のあるアクションが実行される可能性があるため、例外がスローされて適切に処理されないケースについて、ソースコードを検索することが重要です。
 
 ### TASVS-CODE-3.3
 
