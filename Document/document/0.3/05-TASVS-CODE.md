@@ -102,9 +102,9 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-3.5
 
-Internal tooling, policies, and test cases should be implemented and evaluated to ensure that they are working correctly. This can help to ensure that the thick client is developed and maintained in a manner that minimizes the introduction of security vulnerabilities.
+内部ツール、ポリシー、テストケースを実装して評価し、それらが正しく機能していることを確認します。これにより、セキュリティ脆弱性の導入を最小限に抑える方法でシッククライアントを開発して保守できます。
 
-These might include code review processes, automated testing tools, and security training for developers. It is important to regularly review and update these tools and processes to ensure that they are effective in identifying and mitigating security vulnerabilities.
+これらには、コードレビュープロセス、自動テストツール、開発者向けのセキュリティトレーニングなどを含みます。これらのツールやプロセスを定期的にレビューして更新し、セキュリティ脆弱性を特定して緩和することに有効であることを確認することが重要です。
 
 ### TASVS-CODE-3.6
 
