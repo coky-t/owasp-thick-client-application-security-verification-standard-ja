@@ -71,7 +71,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-2.4
 
-The thick client should be built in release mode with settings appropriate for a release build. This ensures that the software is optimized for performance and security, and that any debugging information or other unnecessary code is removed.
+シッククライアントはリリースビルドに適した設定でのリリースモードでビルドする必要があります。これは、ソフトウェアのパフォーマンスとセキュリティを最適化し、デバッグ情報やその他の不要なコードを削除します。
 
 ### TASVS-CODE-2.5
 
