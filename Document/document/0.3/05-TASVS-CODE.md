@@ -135,28 +135,28 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-4.6
 
-Format strings should not take potentially hostile input, and should be constant. This can help to prevent attackers from exploiting format string vulnerabilities to read sensitive data or execute arbitrary code on the thick client.
+フォーマット文字列は潜在的に悪意のある入力を受け取らず、不変である必要があります。これにより、攻撃者がフォーマット文字列の脆弱性を悪用して機密データを読み取ったり、シッククライアントで任意のコードを実行することを防ぐのに役立ちます。
 
-An attack might look like this:
+攻撃は以下のようになるかもしれません。
 
 ```c
 char buffer[100];
 snprintf(buffer, sizeof(buffer), user_input);
 ```
 
-If `user_input` contains a format string specifier like `%s`, an attacker could use it to read sensitive data or execute arbitrary code on the thick client.
+`user_input` に `%s` のようなフォーマット文字列指定子が含まれると、攻撃者はそれを使用して機密データを読み取ったり、シッククライアントで任意のコードを実行する可能性があります。
 
-For example if `user_input` is `"%s"`, the `snprintf` function will try to read a string from memory and write it to the buffer. This can lead to a buffer overflow or other memory corruption vulnerability.
+たとえば `user_input` が `"%s"` の場合、`snprintf` 関数はメモリから文字列を読み取ってバッファに書き込もうとします。これによりバッファオーバーフローやその他のメモリ破損の脆弱性につながる可能性があります。
 
-If user_input is `"%x %x %x %x"`, `snprintf` will interpret this as reading four hexadecimal values from the stack, potentially leaking stack contents.
+user_input が `"%x %x %x %x"` の場合、`snprintf` はこれをスタックから四つの十六進数値を読み取るものと解釈し、スタックの内容を漏洩する可能性があります。
 
-To mitigate this, the format string should be constant, like this:
+これを避けるには、以下のようにフォーマット文字列を不変にする必要があります。
 
 ```c
 snprintf(buffer, sizeof(buffer), "%s", user_input);
 ```
 
-Notice that the format string is constant i.e. `"%s"` and not `user_input`.
+フォーマット文字列は不変、すなわち `"%s"` であり `user_input` ではないことに注意してください。
 
 
 
