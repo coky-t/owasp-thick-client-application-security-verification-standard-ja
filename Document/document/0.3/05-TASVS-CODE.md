@@ -25,7 +25,7 @@
 | TASVS-CODE-3.5  | 該当する場合は、内部ツール、ポリシー、テストケースが正しく実装され、評価されていることを確認します。                                                                                                                                                                                           | X  | X  | X  |
 | TASVS-CODE-3.6  | 未使用のコードを特定して消去します。後で必要になった場合、ソースコードリポジトリの履歴に残ることを覚えておいてください。README や changelog ファイルを使用して、価値の高い歴史的コンテキストや非推奨の詳細を保存します。使われなくなったプロジェクトリポジトリを保持せずに、リポジトリをアーカイブすることを検討してください。 | X  | X  | X  |
 | TASVS-CODE-4    | クライアントサイド - バリデーション、サニタイゼーション、エンコーディング (Client Side - Validation, Sanitization and Encoding)                                                                                                                                                                |    |    |    |
-| TASVS-CODE-4.1  | マクロやテンプレートなどの機能を介した信頼できないデータはコードおよびコマンドインジェクション攻撃から保護します。代替手段がない場合、含まれているあらゆるユーザー入力は実行前にサニタイズまたはサンドボックス化しなければなりません。                                                         | X  | X  | X  |
+| TASVS-CODE-4.1  | マクロやテンプレートなどの機能を介した信頼できないデータはコードインジェクション攻撃およびコマンドインジェクション攻撃から保護します。代替手段がない場合、含まれているあらゆるユーザー入力は実行前にサニタイズまたはサンドボックス化しなければなりません。                                                         | X  | X  | X  |
 | TASVS-CODE-4.2  | アプリケーションが OS コマンドインジェクションを防ぐことを検証します。                                                                                                                                                                                                                         | X  | X  | X  |
 | TASVS-CODE-4.3  | 非構造化データがサニタイズされ、許容される文字や長さなどの安全対策を施していることを検証します。                                                                                                                                                                                               | X  | X  | X  |
 | TASVS-CODE-4.4  | アプリケーションは XML パーサーを適切に制限し、可能な限り最も制限的な構成のみを使用すること、および、外部エンティティの解決などの安全でない機能を無効にし、XML eXternal Entity (XXE) 攻撃を防ぐことを検証します。                                                                              | X  | X  | X  |
@@ -117,7 +117,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-4.2
 
-The thick client should protect against OS command injection attacks. This can be done by validating and sanitizing user input before it is executed, and by using secure coding practices to prevent command injection vulnerabilities.
+シッククライアントは OS コマンドインジェクション攻撃から保護する必要があります。ユーザー入力が実行される前に検証してサニタイズすること、およびセキュアコーディングプラクティスを使用することで、コマンドインジェクション脆弱性を防ぎます。
 
 ### TASVS-CODE-4.3
 
