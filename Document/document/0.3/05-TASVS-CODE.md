@@ -96,9 +96,9 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-3.4
 
-Depending on the language(s) in use, appropriate static application security testing (SAST) tooling should be used to analyze the source code of the thick client. This can help to identify vulnerabilities in the code that may be missed during manual code review.
+使用する言語に応じて、適切な静的アプリケーションセキュリティテスト (SAST) ツールを使用して、シッククライアントのソースコードを解析します。これは、手作業によるコードレビューで見落とされる可能性があるコード内の脆弱性を特定するのに役立ちます。
 
-Tools such as [SonarQube](https://www.sonarqube.org/), [Checkmarx](https://www.checkmarx.com/), and [Veracode](https://www.veracode.com/) can be used to perform static code analysis on the thick client codebase. Plus framework specific tools like [Brakeman](https://brakemanscanner.org/) for Ruby on Rails, [Bandit](https://bandit.readthedocs.io/en/latest/) for Python, and [FindBugs](http://findbugs.sourceforge.net/) for Java.
+[SonarQube](https://www.sonarqube.org/), [Checkmarx](https://www.checkmarx.com/), [Veracode](https://www.veracode.com/) などのツールを使用すると、シッククライアントコードベースの静的コード解析を実行できます。さらに、Ruby on Rails 用の [Brakeman](https://brakemanscanner.org/)、Python 用の [Bandit](https://bandit.readthedocs.io/en/latest/)、Java 用の [FindBugs](http://findbugs.sourceforge.net/) などのフレームワーク固有のツールもあります。
 
 ### TASVS-CODE-3.5
 
