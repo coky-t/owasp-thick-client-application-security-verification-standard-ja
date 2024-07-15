@@ -112,7 +112,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-4.1
 
-Untrusted data should be protected from code and command injection attacks. This can be done by sanitizing or sandboxing user input before it is executed. If there is no alternative to including user input in the thick client, it should be sanitized or sandboxed to prevent code and command injection attacks.
+信頼できないデータはコードインジェクション攻撃やコマンドインジェクション攻撃から保護する必要があります。これは、ユーザー入力を実行前にサニタイズまたはサンドボックス化することで実現できます。ユーザー入力をシッククライアントに含める以外に方法がない場合は、サニタイズまたはサンドボックス化して、コードインジェクション攻撃やコマンドインジェクション攻撃を防ぐ必要があります。
 
 
 ### TASVS-CODE-4.2
