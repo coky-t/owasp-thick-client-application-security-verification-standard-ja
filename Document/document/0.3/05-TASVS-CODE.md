@@ -87,11 +87,11 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-3.3
 
-# what is binary static analysis?
+# バイナリ静的解析とは？
 
-Binary static analysis is used to verify that the thick client binaries are compiled with the latest compiler and that the compilation settings are appropriate for security. This can help to identify security vulnerabilities in the thick client that may be introduced during the compilation process.
+バイナリ静的解析を使用して、シッククライアントバイナリが最新のコンパイラでコンパイルされていること、およびコンパイル設定がセキュリティについて適切であることを検証します。これは、コンパイルプロセスの中で発生する可能性のあるシッククライアントのセキュリティ脆弱性を特定するのに役立ちます。
 
-Framework specific tools like [dnSpy]() or [ILSpy]() can be used to decompile and analyze .NET binaries. Alternatively, tools like [Ghidra](https://ghidra-sre.org/) or [IDA Pro](https://www.hex-rays.com/products/ida/) can be used to analyze binaries in other languages.
+[dnSpy]() や [ILSpy]() などのフレームワーク固有のツールを使用して、.NET バイナリを逆コンパイルして解析します。また、[Ghidra](https://ghidra-sre.org/) や [IDA Pro](https://www.hex-rays.com/products/ida/) などのツールを使用して、他の言語のバイナリを解析できます。
 
 
 ### TASVS-CODE-3.4
