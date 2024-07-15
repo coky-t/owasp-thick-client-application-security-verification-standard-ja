@@ -125,7 +125,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-4.4
 
-The thick client should restrict XML parsers to use the most restrictive configuration possible to prevent XML eXternal Entity (XXE) attacks. This can help to prevent attackers from exploiting XML parsers to read sensitive data or execute arbitrary code on the thick client.
+シッククライアントは XML パーサーが最も制限の厳しい構成を使用するように制限して、XML eXternal Entity (XXE) 攻撃を防ぐ必要があります。これにより、攻撃者が XML パーサーを悪用して機密データを読み取ったり、シッククライアントで任意のコードを実行することを防ぐのに役立ちます。
 
 ### TASVS-CODE-4.5
 
