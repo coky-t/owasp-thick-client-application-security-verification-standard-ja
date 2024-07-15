@@ -108,7 +108,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-3.6
 
-Unused code should be identified and removed from the thick client codebase. This can help to reduce the attack surface of the thick client and minimize the risk of security vulnerabilities. It is important to use README and changelog files to preserve high-value historical context or deprecated details. Obsolote project repositories should be archived because they risk being used as a source of vulnerabilities in future projects.
+未使用のコードを特定し、シッククライアントコードベースから削除する必要があります。これにより、シッククライアントの攻撃対象領域を減らし、セキュリティ脆弱性のリスクを最小限に抑えることができます。README ファイルと changelog ファイルを使用して、価値の高い履歴コンテキストや廃止された詳細を保存することが重要です。廃止されたプロジェクトリポジトリは、将来のプロジェクトで脆弱性の原因として使用されるリスクがあるため、アーカイブ化する必要があります。
 
 ### TASVS-CODE-4.1
 
