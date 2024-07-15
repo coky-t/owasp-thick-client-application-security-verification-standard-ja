@@ -75,7 +75,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-2.5
 
-Framework security features such as byte-code minification and stack protection should be enabled to help protect the thick client from common security vulnerabilities. These features can help to prevent attacks such as buffer overflows and stack smashing.
+バイトコードの縮小やスタック保護などのフレームワークセキュリティ機能を有効にして、シッククライアントを一般的なセキュリティ脆弱性から保護する必要があります。これらの機能はバッファオーバーフローとスタックスマッシングなどの攻撃を防ぐのに役立ちます。
 
 ### TASVS-CODE-3.1
 
