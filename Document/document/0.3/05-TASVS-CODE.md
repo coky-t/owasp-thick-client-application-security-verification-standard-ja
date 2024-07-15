@@ -79,7 +79,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-3.1
 
-Third party components used by the thick client, such as libraries and frameworks, should be identified and checked for known vulnerabilities. It is important to ensure that these components are up to date and not unsupported, deprecated, or legacy, as they can introduce security vulnerabilities into the thick client.
+ライブラリやフレームワークなど、シッククライアントで使用されるサードパーティコンポーネントを特定し、既知の脆弱性がないかチェックする必要があります。これらのコンポーネントは、シッククライアントにセキュリティ脆弱性をもたらす可能性があるため、サポートされていないもの、非推奨のもの、レガシーなものではなく、最新のものであることを確保することが重要です。
 
 ### TASVS-CODE-3.2
 
