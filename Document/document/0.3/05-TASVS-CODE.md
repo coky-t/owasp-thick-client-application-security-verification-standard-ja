@@ -121,7 +121,7 @@ TASVS と ASVS 間の不要なクロスオーバーを避けるために、こ�
 
 ### TASVS-CODE-4.3
 
-Unstructured data should be sanitized to enforce safety measures such as allowed characters and length. This can help to prevent security vulnerabilities that may be introduced by unstructured data, such as buffer overflows or injection attacks.
+非構造化データをサニタイズして、許容される文字や長さなどの安全対策を実施する必要があります。これは、バッファオーバーフローやインジェクション攻撃など、非構造化データによってもたらされる可能性のあるセキュリティ脆弱性を防ぐのに役立ちます。
 
 ### TASVS-CODE-4.4
 
