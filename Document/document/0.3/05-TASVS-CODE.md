@@ -162,9 +162,9 @@ snprintf(buffer, sizeof(buffer), "%s", user_input);
 
 ### TASVS-CODE-4.7
 
-Sign, range, and input validation techniques should be used to prevent integer overflows. This can help to prevent attackers from exploiting integer overflows to execute arbitrary code on the thick client.
+符号、範囲、入力バリデーションを使用して、整数オーバーフローを防ぐ必要があります。これにより、攻撃者が整数オーバーフローを悪用して、シッククライアント上で任意のコードを実行のを防ぐことができる。
 
-For exmaple in C/C++:
+たとえば C/C++ の場合:
 
 ```c
 int a = 100;
@@ -172,9 +172,9 @@ int b = 200;
 int c = a + b;
 ```
 
-If `a` and `b` are user-controlled, an attacker could set them to values that cause an integer overflow, resulting in `c` being a negative value. This can lead to unexpected behavior or security vulnerabilities in the thick client.
+`a` と `b` がユーザーによって制御される場合、攻撃者はそれらに整数オーバーフローを引き起こす値を設定し、結果として `c` は負の値になる可能性があります。これにより、シッククライアントで予期しない動作やセキュリティ脆弱性につながる可能性があります。
 
-To mitigate this, input validation should be used to ensure that `a` and `b` are within a valid range before performing the addition:
+これを緩和するには、加算を実行する前に入力バリデーションを使用して、`a` と `b` が有効な範囲内であることを確認する必要があります。
 
 ```c
 if (a > INT_MAX - b) {
