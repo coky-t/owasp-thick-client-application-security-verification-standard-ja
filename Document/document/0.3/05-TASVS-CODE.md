@@ -186,11 +186,11 @@ int c = a + b;
 
 ### TASVS-CODE-4.8
 
-Serialized objects should use integrity checks or be encrypted to prevent hostile object creation or data tampering. This can help to prevent attackers from exploiting serialization vulnerabilities to execute arbitrary code on the thick client.
+シリアライズされたオブジェクトは完全性チェックを使用するか暗号化して、敵対的なオブジェクトの生成やデータの改竄を防ぐ必要があります。これにより、攻撃者がシリアライゼーション脆弱性を悪用して、シッククライアント上で任意のコードを実行するのを防ぐのに役立ちます。
 
-For example, if an attacker can modify a serialized object before it is deserialized, they could introduce malicious code or data into the thick client. By using integrity checks or encryption, the thick client can verify that the serialized object has not been tampered with before deserializing it.
+たとえば、攻撃者がシリアライズされたオブジェクトをデシリアライズする前に改変できれば、悪意のあるコードやデータをシッククライアントに持ち込む可能性があります。完全性チェックや暗号化を使用することで、シッククライアントはシリアライズされたオブジェクトをデシリアライズする前に改竄されていないことを検証できます。
 
-In C# a bad example might look like this:
+C# では、悪い例として以下のようになるかもしれません。
 
 ```csharp
 using System;
@@ -220,9 +220,9 @@ public class MyClass
 }
 ```
 
-In this example, an attacker could modify the `serialized` object before it is deserialized, potentially introducing malicious code or data into the thick client. To mitigate this, integrity checks or encryption should be used to verify that the serialized object has not been tampered with before deserializing it.
+この例では、攻撃者は `serialized` オブジェクトをデシリアライズする前に改変し、悪意のあるコードやデータをシッククライアントに持ち込む可能性があります。これを軽減するには、完全性チェックや暗号化を使用して、シリアライズされたオブジェクトをデシリアライズする前に改竄されていないことを検証する必要があります。
 
-A good implementation might look like this:
+良い実装としては以下のようになるかもしれません。
 
 ```csharp
 using System;
@@ -279,7 +279,7 @@ public class MyClass
 }
 ```
 
-In this example, a hash of the serialized object is calculated before it is deserialized, and the hash is verified after deserialization to ensure that the object has not been tampered with. This can help to prevent attackers from exploiting serialization vulnerabilities to execute arbitrary code on the thick client.
+この例では、シリアライズされたオブジェクトのハッシュをデシリアライズする前に計算し、デシリアライズ後にハッシュを検証して、オブジェクトが改竄されていないことを確認します。これにより、攻撃者がシリアライゼーション脆弱性を悪用して、シッククライアント上で任意のコードを実行することを防ぐのに役立ちます。
 
 
 ### TASVS-CODE-4.9
