@@ -450,11 +450,11 @@ public class Program
 
 ### TASVS-CODE-4.12
 
-Memory should be allocated, freed, and used securely in unmanaged code. This can help to prevent attackers from exploiting memory vulnerabilities to execute arbitrary code on the thick client.
+メモリはアンマネージドコード内で安全に割り当てて、解放し、使用する必要があります。これにより、攻撃者がメモリ脆弱性を悪用してシッククライアント上で任意のコードを実行することを防ぐのに役立ちます。
 
-For example, if memory is not allocated, freed, and used securely in unmanaged code, an attacker could exploit memory vulnerabilities to execute arbitrary code on the thick client. By using secure memory allocation, freeing, and usage practices, the thick client can prevent attackers from exploiting memory vulnerabilities.
+たとえば、メモリがアンマネージドコード内で安全に割り当て、解放、使用されない場合、攻撃者はメモリ脆弱性を悪用してシッククライアント上で任意のコードを実行する可能性があります。安全なメモリ割り当て、解放、使用のプラクティスを使用することで、シッククライアントは攻撃者がメモリ脆弱性を悪用するのを防ぐことができます。
 
-In C/C++ a bad example might look like this:
+C/C++ では、悪い例として以下のようになるかもしれません。
 
 ```c
 #include <stdlib.h>
@@ -472,7 +472,7 @@ void foo()
 }
 ```
 
-In this example, the `buffer` variable is allocated, used, and freed in an insecure way, potentially allowing an attacker to exploit memory vulnerabilities to execute arbitrary code on the thick client. To mitigate this, memory should be allocated, used, and freed securely:
+この例では、`buffer` 変数が安全でない方法で割り当てて、使用し、解放されるため、攻撃者がメモリ脆弱性を悪用してシッククライアント上で任意のコードを実行できる可能性があります。これを軽減するために、メモリは安全に割り当てて、使用し、解放される必要があります。
 
 ```c
 #include <stdlib.h>
@@ -496,7 +496,7 @@ void foo()
 }
 ```
 
-In this example, the `buffer` variable is allocated, used, and freed securely, with checks for allocation failure and bounds checking to prevent memory vulnerabilities. This can help to prevent attackers from exploiting memory vulnerabilities to execute arbitrary code on the thick client.
+この例では、`buffer` 変数が安全に割り当てて、使用し、解放され、割り当て失敗のチェックと境界チェックでメモリ脆弱性を防ぎます。これにより、攻撃者がメモリ脆弱性を悪用してシッククライアント上で任意のコードを実行するのを防ぐのに役立ちます。
 
 ### TASVS-CODE-5.1
 
