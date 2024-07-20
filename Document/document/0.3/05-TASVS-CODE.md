@@ -320,11 +320,11 @@ public class MyClass
 
 ### TASVS-CODE-4.10
 
-The thick client's handling of spawning processes should be done securely. This can help to prevent attackers from exploiting process spawning vulnerabilities to execute arbitrary code on the thick client.
+シッククライアントのプロセス生成の処理は安全に行う必要があります。これにより、攻撃者がプロセス生成の脆弱性を悪用してシッククライアント上で任意のコードを実行することを防ぐのに役立ちます。
 
-For example, if the thick client spawns a process with user-controlled arguments, an attacker could use this to execute arbitrary code on the thick client. By validating and sanitizing process arguments before spawning a process, the thick client can prevent attackers from exploiting process spawning vulnerabilities.
+たとえば、シッククライアントがユーザー制御の引数でプロセスを生成する場合、攻撃者はこれを使用してシッククライアント上で任意のコードを実行できます。プロセスを生成する前にプロセス引数を検証してサニタイズすることで、シッククライアントは攻撃者がプロセス生成の脆弱性の悪用を防止できます。
 
-In C# a bad example might look like this:
+C# では、悪い例として以下のようになるかもしれません。
 
 ```csharp
 using System;
@@ -343,7 +343,7 @@ public class Program
 }
 ```
 
-In this example, the `user_input` variable is used to construct the arguments for the `cmd.exe` process, potentially allowing an attacker to execute arbitrary code on the thick client. A malicious user could set `user_input` to something like `"; calc.exe;` to execute the Windows Calculator application. To mitigate this, process arguments should be validated and sanitized before spawning a process:
+この例では、`user_input` 変数を使用して、`cmd.exe` プロセスの引数を作成し、攻撃者がシッククライアント上で任意のコードを実行できる可能性があります。悪意のあるユーザーは `user_input` に `"; calc.exe;` のようなものを設定して、Windows Calculator アプリケーションを実行できます。これを軽減するには、プロセスを生成する前にプロセス引数を検証してサニタイズする必要があります。
 
 ```csharp
 using System;
@@ -382,7 +382,7 @@ public class Program
 }
 ```
 
-In this example, the `IsValid` function is used to validate and sanitize the `user_input` variable before it is used to construct the arguments for the `cmd.exe` process. This can help to prevent attackers from exploiting process spawning vulnerabilities to execute arbitrary code on the thick client.
+この例では、`IsValid` 関数を使用して、`user_input` 変数を使用する前に検証しサニタイズしてから、`cmd.exe` プロセスの引数を構築します。これにより、攻撃者はプロセス生成の脆弱性を悪用してシッククライアント上で任意のコードを実行するのを防ぐのに役立ちます。
 
 ### TASVS-CODE-4.11
 
