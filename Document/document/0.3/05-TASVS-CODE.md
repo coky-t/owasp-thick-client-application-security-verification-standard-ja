@@ -386,11 +386,11 @@ public class Program
 
 ### TASVS-CODE-4.11
 
-User-submitted filename metadata should not be used directly by system or framework filesystems to prevent path traversal attacks. This can help to prevent attackers from exploiting path traversal vulnerabilities to read sensitive data or execute arbitrary code on the thick client.
+パストラバーサル攻撃を防ぐために、ユーザーが送信したファイル名メタデータをシステムやフレームワークのファイルシステムで直接使用すべきではありません。これにより、攻撃者がパストラバーサル脆弱性を悪用して機密データを読み取ったり、シッククライアント上で任意のコードを実行することを防ぐのに役立ちます。
 
-For example, if the thick client uses user-submitted filenames to access files on the filesystem, an attacker could use this to read sensitive data or execute arbitrary code on the thick client. By validating and sanitizing user-submitted filenames before using them to access files, the thick client can prevent attackers from exploiting path traversal vulnerabilities.
+たとえば、シッククライアントがファイルシステム上のファイルにアクセスするためにユーザーが送信したファイル名を使用する場合、攻撃者がこれを使用して機密データを読み取ったり、シッククライアント上で任意のコードを実行する可能性があります。ユーザーが送信したファイル名をファイルへのアクセスに使用する前に検証してサニタイズすることで、シッククライアントは攻撃者がパストラバーサル脆弱性を悪用するのを防ぐことができます。
 
-In C# a bad example might look like this:
+C# では、悪い例として以下のようになるかもしれません。
 
 ```csharp
 using System;
@@ -408,7 +408,7 @@ public class Program
 }
 ```
 
-In this example, the `user_input` variable is used to construct the path to a file on the filesystem, potentially allowing an attacker to read sensitive data or execute arbitrary code on the thick client. A malicious user could set `user_input` to something like `..\..\..\Windows\System32\cmd.exe` to execute the Windows Command Prompt application. To mitigate this, user-submitted filenames should be validated and sanitized before using them to access files, in C# Path.GetFullPath can be used to resolve the path and more generally a known good list of paths can be used to validate the input.
+この例では、`user_input` 変数を使用してファイルシステム上のファイルへのパスを構築するため、攻撃者が機密データを読み取ったり、シッククライアント上で任意のコードを実行する可能性があります。悪意のあるユーザーは `user_input` に `..\..\..\Windows\System32\cmd.exe` のようなものを設定して、Windows Command Prompt アプリケーションを実行する可能性があります。これを軽減するには、ユーザーが送信したファイル名をファイルへのアクセスに使用する前に検証してサニタイズする必要があります。C# では、Path.GetFullPath を使用してパスを解決でき、より一般的には、既知の適切なパスのリストを使用して入力を検証できます。
 
 ```csharp
 using System;
