@@ -505,9 +505,9 @@ void foo()
 
 ### TASVS-CODE-5.2
 
-In thick client implementations, users face significant risks due to deceptive design patterns. These include tactics like fake scarcity, forced actions, hidden costs, and trick wording, which manipulate users into making unintended decisions. For instance, users might encounter fake urgency to rush purchases or hidden subscriptions they didn't consent to. Such practices undermine user autonomy, increase the likelihood of inadvertent commitments, and obscure critical information, leading to potential financial and security implications. Ensuring transparency and user control is crucial to mitigate these risks.
+シッククライアントの実装では、ユーザーは欺瞞的なデザインパターンによる重大なリスクに直面する。これには、偽の希少性、強制的なアクション、隠れたコスト、トリックワードなどの戦術があり、ユーザーを操作して意図しない意思決定をします。たとえば、ユーザーは購入を急がせる偽の緊急性や、同意していない隠されたサブスクリプションに遭遇するかもしれません。このような慣行は、ユーザーの自主性を損ない、不用意な約束の可能性を高め、重要な情報を不明瞭にし、金銭的およびセキュリティへの影響に及ぼす可能性があります。透明性とユーザーコントロールを確保し、これらのリスクを軽減するために不可欠です。
 
-For more details, visit [Deceptive Patterns.](https://www.deceptive.design/types)
+詳細については [Deceptive Patterns](https://www.deceptive.design/types) をご覧ください。
 
 ### TASVS-CODE-5.3
 
