@@ -500,7 +500,7 @@ void foo()
 
 ### TASVS-CODE-5.1
 
-If passwords or pins are displayed in clear text on the user interface of the thick client, an attacker could easily steal them and use them to access sensitive information. By ensuring that sensitive data is not exposed through the user interface, the thick client can protect sensitive information from unauthorized access.
+パスワードや PIN などがシッククライアントのユーザーインタフェース上に平文で表示されると、攻撃者は簡単にそれらを盗み出して使用し、機密情報にアクセスできます。機密データがユーザーインタフェースを通じて公開されないようにすることで、シッククライアントは機密情報を認可されていないアクセスから保護できます。
 
 
 ### TASVS-CODE-5.2
