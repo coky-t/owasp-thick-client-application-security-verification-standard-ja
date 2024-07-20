@@ -162,7 +162,7 @@ snprintf(buffer, sizeof(buffer), "%s", user_input);
 
 ### TASVS-CODE-4.7
 
-符号、範囲、入力バリデーションを使用して、整数オーバーフローを防ぐ必要があります。これにより、攻撃者が整数オーバーフローを悪用して、シッククライアント上で任意のコードを実行のを防ぐことができる。
+符号、範囲、入力バリデーションを使用して、整数オーバーフローを防ぐ必要があります。これにより、攻撃者が整数オーバーフローを悪用してシッククライアント上で任意のコードを実行することを防ぐことができる。
 
 たとえば C/C++ の場合:
 
@@ -186,7 +186,7 @@ int c = a + b;
 
 ### TASVS-CODE-4.8
 
-シリアライズされたオブジェクトは完全性チェックを使用するか暗号化して、敵対的なオブジェクトの生成やデータの改竄を防ぐ必要があります。これにより、攻撃者がシリアライゼーション脆弱性を悪用して、シッククライアント上で任意のコードを実行するのを防ぐのに役立ちます。
+シリアライズされたオブジェクトは完全性チェックを使用するか暗号化して、敵対的なオブジェクトの生成やデータの改竄を防ぐ必要があります。これにより、攻撃者がシリアライゼーション脆弱性を悪用してシッククライアント上で任意のコードを実行することを防ぐのに役立ちます。
 
 たとえば、攻撃者がシリアライズされたオブジェクトをデシリアライズする前に改変できれば、悪意のあるコードやデータをシッククライアントに持ち込む可能性があります。完全性チェックや暗号化を使用することで、シッククライアントはシリアライズされたオブジェクトをデシリアライズする前に改竄されていないことを検証できます。
 
@@ -284,11 +284,11 @@ public class MyClass
 
 ### TASVS-CODE-4.9
 
-Deserialization of untrusted data should be avoided or protected in both custom code and third-party libraries. This can help to prevent attackers from exploiting deserialization vulnerabilities to execute arbitrary code on the thick client.
+信頼できないデータのデシリアライズを回避するか、カスタムコードとサードパーティライブラリの両方で防御する必要があります。これにより、攻撃者がデシリアライゼーション脆弱性を悪用してシッククライアント上で任意のコードを実行することを防ぐのに役立ちます。
 
-For example, if an attacker can control the data that is deserialized by the thick client, they could introduce malicious code or data into the application. By avoiding deserialization of untrusted data or protecting it with integrity checks or encryption, the thick client can verify that the data has not been tampered with before deserializing it.
+たとえば、攻撃者がシッククライアントでデシリアライズされるデータを制御できる場合、悪意のあるコードやデータをアプリケーションに持ち込む可能性がありません。信頼できないデータのデシリアライゼーションを回避したり、完全性チェックや暗号化で保護することで、シッククライアントはデシリアライズする前にデータが改竄されていないことを検証できます。
 
-It is recommended to use safer libraries where possible and to validate the data before deserializing it. For example, in C# the `DataContractSerializer` class can be used to deserialize JSON data in a safer way than the `BinaryFormatter` class.
+可能な限り安全なライブラリを使用し、データをデシリアライズする前に検証することをお勧めします。たとえば、C# では `DataContractSerializer` クラスを使用すると、`BinaryFormatter` クラスよりも安全な方法で JSON データをデシリアライズできます。
 
 ```csharp
 using System;
@@ -315,7 +315,7 @@ public class MyClass
 }
 ```
 
-In this example, the `DataContractJsonSerializer` class is used to deserialize JSON data in a safer way than the `BinaryFormatter` class. This can help to prevent attackers from exploiting deserialization vulnerabilities to execute arbitrary code on the thick client.
+この例では、`DataContractJsonSerializer` クラスを使用して、`BinaryFormatter` クラスより安全な方法で JSON データをデシリアライズします。これにより、攻撃者がデシリアライゼーション脆弱性を悪用してシッククライアント上で任意のコードを実行することを防ぐのに役立ちます。
 
 
 ### TASVS-CODE-4.10
