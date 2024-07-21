@@ -49,7 +49,7 @@
 | TASVS-CODE-6.2  | 「スマートファジング (smart fuzzing)」を実行します。コードカバレッジを最大化するテストケースをインテリジェントに生成し、複雑なプログラムの状態を探索して、「ダムファジング (dumb fuzzing)」よりも脆弱性を発見する可能性を高めます。                                                            |    |    | X  |
 | TASVS-CODE-7    | クライアントサイド - 権限と 2 のルール (Client Side - Privilege and Rule of two)                                                                                                                                                                                                               |    |    |    |
 | TASVS-CODE-7.1  | ソフトウェアが最小権限の原則に従い、期待通りに動作するために最低レベルの権限で実行することを確保します。複数レベルの権限が必要となる場合、その IPC インタフェースが明確に定義され、必要以上の機能は公開していません。                                                                          | X  | X  | X  |
-| TASVS-CODE-7.2  | シッククライアントは「2 のルール」に従っており、信頼できない入力で動作、メモリ安全でない言語で記載、高い権限で/サンドボックスなしで動作、の 2 つ以上を持つことはできません。                                                                                                                   | X  | X  | X  |
+| TASVS-CODE-7.2  | シッククライアントは「2 のルール」に従っており、信頼できない入力で動作、メモリ安全でない言語で記述、高い権限で/サンドボックスなしで動作、の 2 つ以上を持つことはできません。                                                                                                                   | X  | X  | X  |
 
 ## コントロールグループ定義
 
@@ -569,12 +569,12 @@ public class Program
 
 ### TASVS-CODE-7.2
 
-The thick client should follow the "Rule of 2", where it cannot have more than 2 of the following characteristics:
+シッククライアントは「2 のルール」に従う必要があります。以下の特性のうち 2 つ以上を持つことはできません。
 
-- Works with untrustworthy inputs
-- Is written in a memory-unsafe language
-- Runs with high privileges or without a sandbox
+- 信頼できない入力で動作する
+- メモリ安全でない言語で記述する
+- 高い権限で、またはサンドボックスなしで実行する
 
-This can help to prevent attackers from exploiting security vulnerabilities in the thick client. For example, if the thick client works with untrustworthy inputs and is written in a memory-unsafe language, an attacker could exploit memory vulnerabilities to execute arbitrary code. By following the "Rule of 2", the thick client can reduce the risk of security vulnerabilities and protect sensitive information from unauthorized access.
+これにより、攻撃者がシッククライアントのセキュリティ脆弱性を悪用するのを防ぐのに役立ちます。たとえば、シッククライアントが信頼できない入力で動作し、メモリ安全でない言語で記述される場合、攻撃者がメモリの脆弱性を悪用して任意のコードを実行する可能性があります。「2 のルール」に従うことで、シッククライアントがセキュリティ脆弱性のリスクを軽減し、機密情報を認可されていないアクセスから保護できます。
 
 \newpage{}
