@@ -556,9 +556,9 @@ public class Program
 
 ### TASVS-CODE-6.2
 
-Performing "smart fuzzing" of the thick client can help to identify security vulnerabilities that may be missed during manual code review. By intelligently generating test cases that maximize code coverage and explore complex program states, the tester can increase the likelihood of finding vulnerabilities over "dumb fuzzing".
+シッククライアントの「スマートファジング」を実行することは、手動コードレビューで見落とされる可能性のあるセキュリティ脆弱性を特定するのに役立ちます。コードカバレッジを最大にし、複雑なプログラム状態を探索するテストケースをインテリジェントに生成することで、テスト担当者は「ダムファジング」よりも脆弱性を発見する可能性を高めることができます。
 
-One way to do this is to use a fuzzer like [AFL]() or [libFuzzer]() with custom test case generation strategies, such as harnesses or mutators. These tools can automatically generate test cases and run them against the thick client to identify security vulnerabilities.
+これを実現する方法の一つは [AFL]() or [libFuzzer]() などの fuzzer をハーネスやミューテータなどのカスタムテストケース生成ストラテジとともに使用することです。これらのツールは、テストケースを自動的に生成し、シッククライアントに対して実行し、セキュリティ脆弱性を特定できます。
 
 ### TASVS-CODE-7.1
 
