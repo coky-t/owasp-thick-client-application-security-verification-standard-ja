@@ -546,7 +546,7 @@ public class Program
 
 ### TASVS-CODE-5.6
 
-If the thick client registers a URL handler or protocol handler, it is important to verify that it cannot trigger dangerous actions or introduce common vulnerabilities. For example, if the thick client registers a URL handler that allows it to open a file or execute a command, an attacker could use this to exploit memory corruption, command and argument injection, or other vulnerabilities. To mitigiate this, the thick client should validate and sanitize the URL handler or protocol handler before registering it or alternatively use an allow list of known good URLs or handlers.
+シッククライアントが URL ハンドラやプロトコルハンドラを登録する場合、危険なアクションをトリガーしたり、一般的な脆弱性を引き入れたりできないことを検証することが重要です。たとえば、シッククライアントがファイルを開いたりコマンドを実行したりできる URL ハンドラを登録した場合、攻撃者はこれを使用してメモリ破損、コマンドおよび引数インジェクション、その他の脆弱性を悪用できるかもしれません。これを軽減するには、シッククライアントは URL ハンドラやプロトコルハンドラを登録する前に検証してサニタイズするか、既知の適切な URL やハンドラの許可リストを使用する必要があります。
 
 ### TASVS-CODE-6.1
 
