@@ -562,9 +562,9 @@ public class Program
 
 ### TASVS-CODE-7.1
 
-The thick client should follow the principle of least privileges and run with the lowest level of privileges required for it to work as expected. If several levels of privileges are required, their IPC interfaces should be well-defined and not expose more features than required. This can help to prevent attackers from exploiting privilege escalation vulnerabilities to compromise the thick client.
+シッククライアントは最小権限の原則に従い、期待通りに動作するために必要な最低レベルの権限で実行する必要があります。複数のレベルの権限が必要な場合、その IPC インタフェースを明確に定義し、必要以上の機能を公開しないようにする必要があります。これにより、攻撃者が権限昇格の脆弱性を悪用してシッククライアントを侵害するのを防ぐのに役立ちます。
 
-For example, if the thick client runs with elevated privileges, an attacker could exploit a vulnerability in the thick client to gain access to sensitive information or execute arbitrary code. By running the thick client with the lowest level of privileges required for it to work as expected, the attack surface is reduced and the risk of privilege escalation vulnerabilities is minimized.
+たとえば、シッククライアントが昇格した権限で実行される場合、攻撃者はシッククライアントの脆弱性を悪用して機密情報にアクセスしたり、任意のコードを実行する可能性があります。シッククライアントを期待通りに動作するために必要な最低レベルの権限で実行することで、攻撃対象領域が縮小し、権限昇格の脆弱性のリスクが最小限に抑えられます。
 
 
 ### TASVS-CODE-7.2
