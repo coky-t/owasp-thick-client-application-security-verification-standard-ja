@@ -511,7 +511,7 @@ void foo()
 
 ### TASVS-CODE-5.3
 
-The thick client should only use workflows that do not violate common security advice. This can help to prevent attackers from exploiting security vulnerabilities in the thick client. For example, if the thick client uses insecure authentication methods or insecure data storage practices. This control is a reminder to the tester to allow intuition and experience to guide the testing process.
+シッククライアントは、一般的なセキュリティアドバイスに違反しないワークフローのみを使用する必要である。これにより、攻撃者がシッククライアントのセキュリティ脆弱性を悪用するのを防ぐのに役立ちます。たとえば、シッククライアントが安全でない認証方法や安全でないデータストレージ方法を使用している場合などです。このコントロールはテスト担当者が直感と経験に基づいてテストプロセスを導くためのリマインダーです。
 
 ### TASVS-CODE-5.4
 
