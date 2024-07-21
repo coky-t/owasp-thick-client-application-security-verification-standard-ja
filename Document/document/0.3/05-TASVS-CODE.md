@@ -515,9 +515,9 @@ void foo()
 
 ### TASVS-CODE-5.4
 
-The attack surface of the thick client should be reduced to be as small as possible. Sandboxing or encapsulation can help to prevent attackers from exploiting vulnerabilities in third-party libraries. For example, if a third-party library has a vulnerability that allows an attacker to execute arbitrary code, sandboxing or encapsulating the library can prevent the attacker from exploiting the vulnerability to compromise the thick client. We can limit the risk by using encapsulation or sandboxing to expose only the required behavior of the third-party library to the thick client. This allows us to better test and understand the functionality consumed by the application.
+シッククライアントの攻撃対象領域は可能な限り小さくする必要があります。サンドボックス化やカプセル化は攻撃者がサードパーティライブラリの脆弱性を悪用するのを防ぐのに役立ちます。たとえば、サードパーティライブラリに攻撃者が任意のコードを実行できる脆弱性がある場合、ライブラリをサンドボックス化またはカプセル化することで、攻撃者が脆弱性を悪用してシッククライアントを侵害するのを防ぐことができます。リスクを抑えるには、カプセル化やサンドボックス化を使用して、サードパーティライブラリの必要な動作のみをシッククライアントに公開します。これにより、アプリケーションによって消費される機能をより適切にテストして理解できます。
 
-An example of sandboxing a third-party library might look like this:
+サードパーティライブラリをサンドボックス化する例は以下のようになるかもしれません。
 
 ```csharp
 using System;
@@ -537,7 +537,7 @@ public class Program
 }
 ```
 
-In this example, the `Sandbox` class is used to encapsulate the `ThirdPartyLibrary` and prevent it from accessing code outside of the sandbox.
+この例では、`Sandbox` クラスを使用して、`ThirdPartyLibrary` をカプセル化し、サンドボックス外のコードにアクセスできないようにします。
 
 
 ### TASVS-CODE-5.5
