@@ -542,7 +542,7 @@ public class Program
 
 ### TASVS-CODE-5.5
 
-To prevent attackers from exploiting vulnerabilities in import files to compromise the thick client, it is important to ensure that import files cannot be abused. This can be done by validating and sanitizing import files before using them. For example, if the thick client imports data from a CSV file, the file should be validated and sanitized.
+攻撃者がインポートファイルの脆弱性を悪用してシッククライアントを侵害するのを防ぐには、インポートファイルを悪用できないようにすることが重要です。これはインポートファイルを使用する前に検証してサニタイズすることで実現できます。たとえば、シッククライアントが CSV ファイルからデータをインポートする場合、そのファイルを検証してサニタイズする必要があります。
 
 ### TASVS-CODE-5.6
 
