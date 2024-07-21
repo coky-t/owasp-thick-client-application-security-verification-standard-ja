@@ -550,9 +550,9 @@ public class Program
 
 ### TASVS-CODE-6.1
 
-Performing "dumb fuzzing" of the thick client with randomized input can help to identify security vulnerabilities that may be missed during manual code review. By generating random input and testing the thick client with it, the tester can identify potential security vulnerabilities that may be exploitable by an attacker.
+シッククライアントの「ダムファジング」をランダムな入力で実行することで、手動コードレビューで見落とされる可能性のある潜在的なセキュリティ脆弱性を特定するのに役立ちます。ランダムな入力を生成し、それを用いてシッククライアントをテストすることで、テスト担当者は攻撃者が悪用できる可能性のある潜在的なセキュリティ脆弱性を特定できます。
 
-One way to do this quickly is to use a fuzzer like [AFL]() or [libFuzzer](). These tools can automatically generate test cases and run them against the thick client to identify security vulnerabilities.
+これを素早く実行する方法の一つは [AFL]() や [libFuzzer]() などの fuzzer を使用することです。これらのツールはテストケースを自動的に生成し、シッククライアントに対して実行して、セキュリティ脆弱性を特定できます。
 
 ### TASVS-CODE-6.2
 
