@@ -19,6 +19,7 @@ John は Bentley Systems の優れたセキュリティアーキテクトであ�
 
 - Einaras Bartkus
 - Thomas Chauchefoin
+- Samuel Aubert
 
 
 ## 謝辞
