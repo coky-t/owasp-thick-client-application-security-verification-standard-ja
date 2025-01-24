@@ -7,7 +7,7 @@ This is the unofficial Japanese translation of the [OWASP Thick Client Applicati
 - Project Site - <https://owasp.org/www-project-thick-client-application-security-verification-standard/>
 - Project Repository - <https://github.com/OWASP/www-project-thick-client-application-security-verification-standard>
 
-# OWASP シッククライアントアプリケーションセキュリティ検証標準 日本語版
+## OWASP シッククライアントアプリケーションセキュリティ検証標準 日本語版
 
 * [はじめに](Document/README.md)
 * [リーダー](Document/leaders.md)
