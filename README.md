@@ -2,6 +2,9 @@
 
 This is the unofficial Japanese translation of the [OWASP Thick Client Application Security Verification Standard](https://github.com/OWASP/www-project-thick-client-application-security-verification-standard).
 
+- Document Site - <https://coky-t.gitbook.io/owasp-thick-client-asvs-ja/>
+- Document Repository - <https://github.com/coky-t/owasp-thick-client-application-security-verification-standard-ja>
+
 ### Originator
 
 - Project Site - <https://owasp.org/www-project-thick-client-application-security-verification-standard/>
@@ -28,3 +31,6 @@ This is the unofficial Japanese translation of the [OWASP Thick Client Applicati
 ## Translator (Japanese)
 
 [Koki Takeyama](https://github.com/coky-t)
+
+- Document Site - <https://coky-t.gitbook.io/owasp-docs-ja/>
+- Document Repository - <https://github.com/coky-t/owasp-docs-ja>
